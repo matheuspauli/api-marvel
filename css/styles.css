@@ -1,0 +1,58 @@
+body {
+    background-image: url(../assets/marvelBackground.jpg);
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+}
+
+.wrapper {
+    position: relative;
+    height: 200px;
+    width: 257px;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(36, 62, 206, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .2s, visibility .2s;
+}
+
+.wrapper:hover .info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bg-danger {
+    background-color: rgb(240, 19, 30) !important;
+}
+
+.btn.btn-outline-success {
+    background-color: black;
+    color: white;
+    border: white;
+    transition: 0.5s ease;
+}
+
+.btn.btn-outline-success:hover {
+    background-color: white;
+    color: black;
+    border: black;
+    transition: 0.5s ease;
+}
+
+input.form-control {
+    width: 550px !important;
+}
+
